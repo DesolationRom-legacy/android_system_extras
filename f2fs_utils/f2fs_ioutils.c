@@ -163,7 +163,7 @@ int f2fs_trim_device()
  */
 int dev_read_version(void *buf, __u64 offset, size_t len)
 {
-	return -1;
+	return 0;
 }
 
 int dev_read(void  *buf, __u64 offset, size_t len)
@@ -203,4 +203,3 @@ int dev_read_blocks(void *buf, __u64 addr, __u32 nr_blks)
 	assert(false); // Must not be invoked.
 	return 0;
 }
-
